@@ -21,4 +21,4 @@ jobs:
             - ./node_modules
       - run:
           name: Deploy
-          command: curl -X POST -d {} ${node-circle-ci}
+          command:  curl -X POST -d {} https://api.netlify.com/build_hooks/61dd369a65155abbf2eb951e
